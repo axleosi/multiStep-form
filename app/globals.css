@@ -18,10 +18,70 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  gap: 30px;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+.container{
+  width: 80%;
+  height: 85vh;
+  color: rgb(34, 34, 158);
+
+}
+.error{
+  color: red;
+}
+.mini-con{
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.info h1{
+  font-size: 45px;
+  font-weight: 600;
+}
+.info p{
+  font-size: 20px;
+  color: gray;
+  margin-top: -3px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: 70%;
+}
+.ind-form{
+  display: flex;
+  flex-direction: column;
+}
+.ind-form input{
+  border-radius: 6px;
+  height: 40px;
+  border: 0.5px solid black;
+  width: 100%;
+  padding: 5px;
+}
+.next-con{
+  display: flex;
+  justify-content: flex-end;
+}
+.next{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  border-radius: 6px;
+  padding: 8px 18px;
+  color: white;
+  background-color: rgb(34, 34, 158) ;
 }

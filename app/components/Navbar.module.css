@@ -1,0 +1,55 @@
+.container{
+    background-image: url(../images/bg-sidebar-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    width: 20%;
+    border-radius: 5px;
+    margin-left: 10px;
+  
+}
+.miniCon{
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.steps{
+    display: flex;
+    gap: 10px;
+    color: white;
+    align-items: center;
+}
+.circleButton{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circleButtonActive{
+    background-color: aquamarine;
+    color: blue;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circleButton:hover{
+    background-color: aquamarine;
+    color: blue;
+}
+.indStep p{
+    font-size: 12px;
+    font-weight: 200;
+    color: gray;
+}
+.link{
+    font-weight: 700;
+}

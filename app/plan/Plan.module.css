@@ -1,0 +1,112 @@
+.con{
+    width: 80%;
+    height: 80vh;
+}
+.switch {
+    position: relative; /* Positions the slider relative to the switch label */
+    display: flex; /* Allows the switch to be inline with other elements */
+    width: 60px; /* Width of the toggle switch */
+    height: 34px; /* Height of the toggle switch */
+    margin: 20px 0; 
+  }
+  .switch input {
+    opacity: 0; /* Hides the default checkbox */
+    width: 0; /* Removes the width of the checkbox */
+    height: 0; /* Removes the height of the checkbox */
+  }
+  
+  .slider {
+    position: absolute; /* Allows precise positioning */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    top: 0; /* Aligns the slider at the top */
+    left: 0; /* Aligns the slider to the left */
+    right: 0; /* Expands the slider to the right */
+    bottom: 0; /* Expands the slider to the bottom */
+    background-color: rgb(28, 28, 138); /* Default background color of the slider */
+    transition: 0.4s; /* Smooth transition for background color */
+    border-radius: 34px; /* Rounds the corners of the slider */
+  }
+  .slider:before {
+    position: absolute; /* Positions the circle inside the slider */
+    content: ""; /* Required for pseudo-elements */
+    height: 26px; /* Height of the circle */
+    width: 26px; /* Width of the circle */
+    left: 4px; /* Position from the left */
+    bottom: 4px; /* Position from the bottom */
+    background-color: white; /* Color of the circle */
+    transition: 0.4s; /* Smooth transition for movement */
+    border-radius: 50%; /* Makes the circle round */
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px); /* Moves the circle to the right */
+  }
+  .select{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
+  .selectI{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .selPlan h1{
+    color: rgb(34, 34, 158);
+    font-size: 45px;
+  font-weight: 600;
+  }
+  .selPlan p{
+    font-size: 20px;
+  color: gray;
+  margin-top: -3px;
+  }
+  .billingInd{
+    margin-top: 20px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .box{
+    height: 150px;
+    width: 150px;
+    border: 1px grey solid;
+    border-radius: 7px;
+  }
+  .boxInd{
+    margin: 8px 0px 0px 6px;
+    display: flex;
+    height: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .boxImg{
+    height: 40px;
+  }
+  .buttonCon{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgba(128, 128, 128, 0.414);
+    height: 60px;
+    border-radius: 7px;
+  }
+  .links{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -10px;
+  }
+  .nextStep{
+    border-radius: 6px;
+  padding: 8px 18px;
+  color: white;
+  background-color: rgb(34, 34, 158) ;
+  
+  }
