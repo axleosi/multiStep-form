@@ -110,3 +110,7 @@
   background-color: rgb(34, 34, 158) ;
   
   }
+  .boxInd .button{
+    cursor: pointer;
+    font-weight: 600;
+  }
