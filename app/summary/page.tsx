@@ -5,12 +5,19 @@ import styles from './Summary.module.css'
 import Link from 'next/link'
 
 const Summary = () => {
-  const {plan,billingMon,billingYr,planArrayYr,planArrayMon,setPlanArrayMon,setBillingMon,setBillingYr,setPlanArrayYr}=useStateContext()
+  const {plan,billingMon,billingYr,planArrayYr,planArrayMon, setCheckbox,setPlanArrayMon,setBillingMon,setBillingYr,setPlanArrayYr}=useStateContext()
   const addSumsMon=()=>{
     let sum1=planArrayMon.reduce((acc, plan)=>acc + plan.latestAmount.amount, 0)
     let sum2=billingMon.reduce((acc, plan)=>acc + plan.latestAmount.amount, 0);
 
     return sum1+sum2
+  }
+  const clear=()=>{
+    setBillingMon([]);
+    setBillingYr([]);
+    setPlanArrayMon([]);
+    setPlanArrayYr([]);
+    setCheckbox({checkbox1: false, checkbox2: false, checkbox3: false})
   }
   const total=addSumsMon()
   const addSumsYr=()=>{
@@ -88,7 +95,7 @@ const Summary = () => {
       </div>
       <div className={styles.links}>
         <Link href='/addons'>Go Back</Link>
-        <Link href='/finish' className={styles.nextStep}>Confirm</Link>
+        <Link href='/finish' className={styles.nextStep} onClick={clear}>Confirm</Link>
       </div>
     </div>
   )
