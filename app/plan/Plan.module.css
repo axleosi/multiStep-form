@@ -114,3 +114,105 @@
     cursor: pointer;
     font-weight: 600;
   }
+
+  @media (max-width: 768px) {
+  .con {
+    width: 95%;
+    height: auto;
+  }
+
+  .selPlan h1 {
+    font-size: 32px;
+  }
+
+  .selPlan p {
+    font-size: 16px;
+  }
+
+  .billingInd {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .box {
+    width: 90%;
+    height: auto;
+  }
+
+  .boxInd {
+    margin: 10px;
+    height: auto;
+    gap: 10px;
+  }
+
+  .boxImg {
+    height: 30px;
+  }
+
+  .buttonCon {
+    width: 100%;
+    
+  }
+
+  .links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .select {
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .selectI {
+    gap: 15px;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .nextStep {
+    width: 100%;
+    text-align: center;
+  }
+
+  .switch {
+    width: 50px;
+    height: 28px;
+  }
+
+  .slider:before {
+    height: 22px;
+    width: 22px;
+    bottom: 3px;
+    left: 3px;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(22px);
+  }
+}
+
+@media (max-width: 480px) {
+  .selPlan h1 {
+    font-size: 24px;
+  }
+
+  .selPlan p {
+    font-size: 14px;
+  }
+
+  .nextStep {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .box {
+    width: 100%;
+  }
+}

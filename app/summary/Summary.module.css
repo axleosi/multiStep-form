@@ -90,3 +90,89 @@
   background-color: rgb(34, 34, 158) ;
   
   }
+
+
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  .miniCon {
+    width: 100%;
+  }
+
+  .finishing h1 {
+    font-size: 32px;
+  }
+
+  .finishing p {
+    font-size: 16px;
+  }
+
+  .plansCon {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .plansLink {
+    font-size: 13px;
+  }
+
+  .addonText {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .total {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .totalT {
+    font-size: 18px;
+  }
+
+  .links {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .nextStep {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .finishing h1 {
+    font-size: 24px;
+  }
+
+  .finishing p {
+    font-size: 14px;
+  }
+
+  .plansLink {
+    font-size: 12px;
+  }
+
+  .totalT {
+    font-size: 16px;
+  }
+
+  .nextStep {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}

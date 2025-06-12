@@ -24,6 +24,9 @@ body {
   gap: 50px;
   width: 100%;
 }
+.maxcon{
+  display: flex;
+}
 
 @layer utilities {
   .text-balance {
@@ -97,4 +100,29 @@ body {
   padding: 8px 18px;
   color: white;
   background-color: rgb(34, 34, 158) ;
+}
+
+
+@media (max-width: 768px) {
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+
+ .navbar-container{
+  width: 90%;
+ }
+
+ .children-container{
+  width: 90%;
+ }
+ .mini-con{
+  margin: 2px;
+ }
+ .form{
+  width: 100%;
+ }
+ .info h1{
+  font-size: 35px;
+ }
 }

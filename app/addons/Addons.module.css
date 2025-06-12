@@ -56,3 +56,62 @@
 .checkbox input{
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    padding: 20px 10px;
+    align-items: flex-start;
+  }
+
+  .miniCon {
+    gap: 20px;
+  }
+
+  .miniSel {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .title h1 {
+    font-size: 32px;
+  }
+
+  .title p {
+    font-size: 16px;
+  }
+
+  .checkbox {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .nextStep {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title h1 {
+    font-size: 24px;
+  }
+
+  .title p {
+    font-size: 14px;
+  }
+
+  .nextStep {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}

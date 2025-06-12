@@ -25,7 +25,7 @@ interface StateContextType {
     setCheckbox: React.Dispatch<React.SetStateAction<{ checkbox1: boolean; checkbox2: boolean; checkbox3: boolean }>>;
 }
 interface Plan{
-    plan:String
+    plan:string
 }
 interface Amount{
     amount:number
